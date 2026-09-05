@@ -7,13 +7,6 @@
     "createdAt": 1788583864898
   },
   {
-    "id": "item_1788583865989_d1gh",
-    "type": "text",
-    "content": "/* Reset & Universal Overrides */\n\n* {\nbox-shadow: none !important;\n}\n\n/* Modal Container Base - Mobile Default (< 768px): Floating at bottom */\n.install-app-modal {\nposition: fixed;\nz-index: 9999;\nwidth: 320px;\nmax-width: calc(100vw - 1em);\nbottom: 0.5em;\nleft: 0.5em;\nright: 0.5em;\ntop: auto;\nmargin-left: auto;\nmargin-right: auto;\ntransition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;\n\n}\n\n.install-app-modal.hidden-prompt {\nopacity: 0;\npointer-events: none;\ntransform: translateY(20px);\n}\n\n@media (min-width: 768px) and (max-width: 1023px) {\n.install-app-modal {\nbottom: 0.5em;\nright: 0.5em;\nleft: auto;\ntop: auto;\nmargin-left: 0;\nmargin-right: 0;\n}\n}\n\n@media (min-width: 1024px) {\n.install-app-modal {\ntop: 0.5em;\nright: 0.5em;\nleft: auto;\nbottom: auto;\nmargin-left: 0;\nmargin-right: 0;\n}\n}\n\n.install-btn-accent {\nbackground-color: var(--theme-accent, #22c55e);\n}\n\n.install-btn-accent:hover {\nfilter: brightness(1.1);\n}\n\n.install-btn-accent:active {\ntransform: scale(0.98);\n}",
-    "fileName": "pwa.css",
-    "createdAt": 1788583865989
-  },
-  {
     "id": "item_1788583866836_5eca",
     "type": "text",
     "content": "{\n  \"name\": \"EduRise\",\n  \"short_name\": \"EduRise\",\n  \"start_url\": \"./index.html\",\n  \"display\": \"standalone\",\n  \"background_color\": \"#03331B\",\n  \"theme_color\": \"#03331B\",\n  \"description\": \"Your one stop educational station.\",\n  \"mobile_app\": \"true\",\n  \"icons\": [\n    {\n      \"src\": \"./1000760180.png\",\n      \"sizes\": \"192x192\",\n      \"type\": \"image/png\"\n    },\n    {\n      \"src\": \"./1000760180.png\",\n      \"sizes\": \"512x512\",\n      \"type\": \"image/png\"\n    }\n  ],\n  \"shortcuts\": [\n    {\n      \"name\": \"Create course\",\n      \"short_name\": \"Create course\",\n      \"url\": \"/view.html\",\n      \"description\": \"Open Create course\",\n      \"icons\": [\n        {\n          \"src\": \"./1000760180.png\",\n          \"sizes\": \"192x192\",\n          \"type\": \"image/png\"\n        }\n      ]\n    },\n    {\n      \"name\": \"Home\",\n      \"short_name\": \"Home\",\n      \"url\": \"/index\",\n      \"description\": \"Open Home\",\n      \"icons\": [\n        {\n          \"src\": \"./1000760180.png\",\n          \"sizes\": \"192x192\",\n          \"type\": \"image/png\"\n        }\n      ]\n    }\n  ]\n}",
