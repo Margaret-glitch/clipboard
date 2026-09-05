@@ -21,13 +21,6 @@
     "createdAt": 1788583865989
   },
   {
-    "id": "item_1788583866544_40pi",
-    "type": "text",
-    "content": "const CACHE_NAME = 'edurise-pwa-v1';\nconst ASSETS = [\n    './',\n    './index.html',\n    './view.html',\n    './create_course.html',\n    './1000760180.png',\n    './pwa.css',\n    './pwa.js',\n    './manifest.json'\n];\n\nself.addEventListener('install', (event) => {\n    event.waitUntil(\n        caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))\n    );\n    self.skipWaiting();\n});\n\nself.addEventListener('activate', (event) => {\n    event.waitUntil(\n        caches.keys().then((keys) => {\n            return Promise.all(\n                keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))\n            );\n        })\n    );\n    self.clients.claim();\n});\n\nself.addEventListener('fetch', (event) => {\n    event.respondWith(\n        caches.match(event.request).then((cachedResponse) => {\n            return cachedResponse || fetch(event.request);\n        })\n    );\n});",
-    "fileName": "sw.js",
-    "createdAt": 1788583866544
-  },
-  {
     "id": "item_1788583866836_5eca",
     "type": "text",
     "content": "{\n  \"name\": \"EduRise\",\n  \"short_name\": \"EduRise\",\n  \"start_url\": \"./index.html\",\n  \"display\": \"standalone\",\n  \"background_color\": \"#03331B\",\n  \"theme_color\": \"#03331B\",\n  \"description\": \"Your one stop educational station.\",\n  \"mobile_app\": \"true\",\n  \"icons\": [\n    {\n      \"src\": \"./1000760180.png\",\n      \"sizes\": \"192x192\",\n      \"type\": \"image/png\"\n    },\n    {\n      \"src\": \"./1000760180.png\",\n      \"sizes\": \"512x512\",\n      \"type\": \"image/png\"\n    }\n  ],\n  \"shortcuts\": [\n    {\n      \"name\": \"Create course\",\n      \"short_name\": \"Create course\",\n      \"url\": \"/view.html\",\n      \"description\": \"Open Create course\",\n      \"icons\": [\n        {\n          \"src\": \"./1000760180.png\",\n          \"sizes\": \"192x192\",\n          \"type\": \"image/png\"\n        }\n      ]\n    },\n    {\n      \"name\": \"Home\",\n      \"short_name\": \"Home\",\n      \"url\": \"/index\",\n      \"description\": \"Open Home\",\n      \"icons\": [\n        {\n          \"src\": \"./1000760180.png\",\n          \"sizes\": \"192x192\",\n          \"type\": \"image/png\"\n        }\n      ]\n    }\n  ]\n}",
