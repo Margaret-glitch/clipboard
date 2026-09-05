@@ -1,0 +1,50 @@
+{
+  "name": "EduRise",
+  "short_name": "EduRise",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#03331B",
+  "theme_color": "#03331B",
+  "description": "Your one stop educational station.",
+  "mobile_app": "true",
+  "icons": [
+    {
+      "src": "./1000760180.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./1000760180.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Create course",
+      "short_name": "Create course",
+      "url": "/view.html",
+      "description": "Open Create course",
+      "icons": [
+        {
+          "src": "./1000760180.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "url": "/index",
+      "description": "Open Home",
+      "icons": [
+        {
+          "src": "./1000760180.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
